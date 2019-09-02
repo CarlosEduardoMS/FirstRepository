@@ -1,0 +1,90 @@
+<html>
+<head>
+	<title>PaletaDeCores</title>
+	<meta charset="utf-8">
+	<link rel="icon" type="x-icon/image" href="https://cdn.icon-icons.com/icons2/624/PNG/512/Paint_Palette-80_icon-icons.com_57294.png">
+</head>
+<script>
+	function mostrarcodigo(){
+		Cor= document.form1.cor.value;
+		document.form1.codigo.value=Cor;
+	} 
+</script>
+<style type="text/css">
+	body{
+		background-image: url(http://towerupstudios.com/blog//wp-content/uploads/2016/04/Paints-in-a-palette-full-of-colors-HD-wallpaper_1920x1080-752x440.jpg);
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+	div{
+		margin-top: 10%;
+		margin-left:30%;
+		margin-right:30%;
+		background-color: white;
+		filter:alpha(opacity=6);
+     	opacity: 0.6;
+     	-moz-opacity:0.6;
+     	-webkit-opacity:0.6;
+		border-radius: 30em;
+		border-style: solid;
+		border-size: 10em;
+		border-color: orange;
+		color: orange;
+		font-family: UBUNTU,Arial;
+		font-size: 1em;
+		font-style: oblique;
+		-webkit-box-shadow: 9px 9px 30px 12px rgba(0,0,0,0.27);
+		-moz-box-shadow: 9px 9px 30px 12px rgba(0,0,0,0.27);
+		box-shadow: 9px 9px 30px 12px rgba(0,0,0,0.27);
+	}
+	div:hover{
+		background-color: #ffa346;
+		filter:alpha(opacity=9);
+     	opacity: 0.9;
+     	-moz-opacity:0.9;
+     	-webkit-opacity:0.9;
+     	border-radius: 30em;
+		border-style: solid;
+		border-size: 10em;
+		border-color: white;
+		color: white;
+		font-family: UBUNTU,Arial;
+		font-size: 2em;
+		font-style: oblique;
+		-webkit-box-shadow: 10px 10px 38px 2px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 38px 2px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 38px 2px rgba(0,0,0,0.75);
+	}
+#bt{
+	background:    #ffffff;
+	background:    linear-gradient(#ffffff, #ffffff 50%, #ff9900 50%, #ff9900);
+	border:        1px solid #ff9900;
+	border-radius: 1000px;
+	padding:       45px 10px;
+	color:         #000000;
+	display:       inline-block;
+	font:          normal bold 25px/1 "Ubuntu", sans-serif;
+	text-align:    center;
+	text-shadow:   1px 1px #999999;
+	-webkit-box-shadow: 9px 9px 30px 12px rgba(0,0,0,0.27);
+	-moz-box-shadow: 9px 9px 30px 12px rgba(0,0,0,0.27);
+	box-shadow: 9px 9px 30px 12px rgba(0,0,0,0.27);
+	text-decoration:none;
+}
+
+</style>
+<body bgcolor="#cecece">
+	<center>
+		<div>
+			<form name= "form1">
+				<h2> Cor</h2> <br>
+			<input type="color" name="cor"><br>
+				<h2> Codigo</h2><br>
+			<input type="text" name="codigo"><br><br>
+			<input id="bt" type="button" name="botao" value="Mostrar" onclick="mostrarcodigo()"><br>
+		  	</form>
+ 		</div>
+ 	</center>
+ </body>
+</html>
